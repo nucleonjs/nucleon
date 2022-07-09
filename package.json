@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && concurrently \"tsc --watch\" \"nodemon dist/main --quiet\"",
+    "start": "tsc && concurrently \"tsc --watch\" \"nodemon -q dist/main\"",
     "start:prod": "node dist/main"
   },
   "devDependencies": {
