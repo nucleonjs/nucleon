@@ -1,0 +1,17 @@
+{
+  "name": "nucleon",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/main",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && concurrently \"tsc --watch\" \"nodemon dist/main --quiet\"",
+    "start:prod": "node dist/main"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.7.4"
+  }
+}

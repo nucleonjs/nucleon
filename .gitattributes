@@ -1,0 +1,8 @@
+* text=auto
+
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.melon.html diff=html
+
+/.github export-ignore
