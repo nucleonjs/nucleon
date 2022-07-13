@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "commonjs",
+    "module": "Node16",
     "outDir": "./dist",
     "declaration": false,
     "declarationMap": false,
@@ -15,7 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "lib": [
-      "es2021"
+      "es2022"
     ]
   },
   "include": [
