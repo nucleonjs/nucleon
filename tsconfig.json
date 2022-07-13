@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "Node16",
+    "module": "CommonJS",
     "outDir": "./dist",
     "declaration": false,
     "declarationMap": false,
