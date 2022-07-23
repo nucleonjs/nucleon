@@ -1,9 +1,9 @@
-import { Controller, Route } from '@nucleonjs/core';
+import { Controller, render, Route, ViewResponse } from '@nucleonjs/core';
 
 @Controller()
 export class AppController {
   @Route.Get('/')
-  public index(): string {
-    return 'Hello World!';
+  public index(): ViewResponse {
+    return render('pages/home');
   }
 }
