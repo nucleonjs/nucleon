@@ -6,6 +6,8 @@ export class AppController {
 
   @Route.Get('/')
   public index(): ViewResponse {
-    return render('pages/home');
+    return render('home', {
+      message: 'Hello world',
+    });
   }
 }
