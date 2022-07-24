@@ -2,12 +2,16 @@
   "name": "nucleon",
   "private": true,
   "version": "1.0.0",
-  "main": "dist/main",
+  "type": "module",
+  "main": "./dist/main",
   "license": "MIT",
+  "exports": {
+    ".": "./dist/main.js"
+  },
   "scripts": {
     "build": "tsc",
-    "start": "tsc && concurrently -r \"tsc --watch\" \"nodemon -q dist/main\"",
-    "start:prod": "node dist/main"
+    "start": "tsc && concurrently -r \"tsc --watch\" \"nodemon -q --experimental-specifier-resolution=node --no-warnings dist/main\"",
+    "start:prod": "node --experimental-specifier-resolution=node dist/main.js"
   },
   "devDependencies": {
     "concurrently": "^7.2.2",

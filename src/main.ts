@@ -10,4 +10,4 @@ const server = createServer<DatabaseClient>({
   channels: [],
 });
 
-server.start();
+await server.start();
